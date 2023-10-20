@@ -12,8 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: Tema 2
+  companyName: Diana_si_rares
+  productName: Tema2_var1
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -154,7 +154,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.Tema2
+    Android: com.Diana_si_rares.Tema2_var1
     Standalone: com.DefaultCompany.Tema-2
   buildNumber:
     Standalone: 0
@@ -823,7 +823,13 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Build: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
     UNet: 1
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -843,11 +849,11 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 84af9453-a5a3-444b-8d4d-7048d32cfa88
+  cloudProjectId: 9b9bf666-f465-4498-b75f-e3ef8d46f2da
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Tema 2
-  organizationId: macovei-rares
+  projectName: Tema 2 (2)
+  organizationId: dianapanainte
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

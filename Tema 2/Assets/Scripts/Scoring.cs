@@ -38,21 +38,21 @@ public class Scoring : MonoBehaviour
 
     void Start()
     {
-    
+        sound = GameObject.FindWithTag("MonkeySound").GetComponent<AudioSource>();
+        target = GameObject.FindWithTag("Hoops").transform;
     }
 
     void Update()
     {
-        positionAtThrow = GameObject.FindWithTag("Basketball").transform;
-        if(Vector3.Distance(GameObject.FindWithTag("MainCamera").transform.position, positionAtThrow.position) > 5 && thrown){
+        if(Vector3.Distance(GameObject.FindWithTag("MainCamera").transform.position, GameObject.FindWithTag("Basketball").transform.position) > 2 && thrown){
+            positionAtThrow = GameObject.FindWithTag("MainCamera").transform;
+
             Debug.Log(thrown);
             thrown = false;
-            sound = GameObject.FindWithTag("MonkeySound").GetComponent<AudioSource>();
-            target = GameObject.FindWithTag("Hoops").transform;
-
+          
             distance = Vector3.Distance(target.position, positionAtThrow.position);
         }
-        else if(Vector3.Distance(GameObject.FindWithTag("MainCamera").transform.position, positionAtThrow.position) <= 5){
+        else if(Vector3.Distance(GameObject.FindWithTag("MainCamera").transform.position, positionAtThrow.position) <= 2){
             thrown = true;
         }
     }

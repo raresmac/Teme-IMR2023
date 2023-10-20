@@ -18,11 +18,13 @@ public class Scoring : MonoBehaviour
     private Transform positionAtThrow;
     new public Collider collider;
     private float distance;
+    bool thrown = true;
 
 
     void OnTriggerEnter()
     {
         if(collider.isTrigger){
+            thrown = false;
             sound.Play(0);  
             scoreNumber++;
             score.text = "SCORE: " + scoreNumber;
@@ -36,16 +38,22 @@ public class Scoring : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Object was thrown");
-        sound = GameObject.FindWithTag("MonkeySound").GetComponent<AudioSource>();
-        target = GameObject.FindWithTag("Hoops").transform;
-        positionAtThrow = GameObject.FindWithTag("Basketball").transform;
-
-        distance = Vector3.Distance(target.position, positionAtThrow.position);
+    
     }
 
     void Update()
     {
-        
+        positionAtThrow = GameObject.FindWithTag("Basketball").transform;
+        if(Vector3.Distance(GameObject.FindWithTag("MainCamera").transform.position, positionAtThrow.position) > 5 && thrown){
+            Debug.Log(thrown);
+            thrown = false;
+            sound = GameObject.FindWithTag("MonkeySound").GetComponent<AudioSource>();
+            target = GameObject.FindWithTag("Hoops").transform;
+
+            distance = Vector3.Distance(target.position, positionAtThrow.position);
+        }
+        else if(Vector3.Distance(GameObject.FindWithTag("MainCamera").transform.position, positionAtThrow.position) <= 5){
+            thrown = true;
+        }
     }
 }

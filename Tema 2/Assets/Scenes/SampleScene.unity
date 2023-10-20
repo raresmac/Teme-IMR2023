@@ -333,6 +333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 385343908}
   - component: {fileID: 385343909}
+  - component: {fileID: 385343910}
   m_Layer: 0
   m_Name: Scorer
   m_TagString: Hoops
@@ -376,6 +377,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.34, y: 0.01, z: 0.17}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &385343910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385343907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6d07b29dd0742a46bec68f4feb2e99c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 554795550}
+  lastShot: {fileID: 1487350832}
+  bestShot: {fileID: 453685698}
+  collider: {fileID: 385343909}
 --- !u!1 &453685696
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,15 +419,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 453685696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.199}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.757}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1752562548}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.825, y: 1.0899998}
+  m_AnchoredPosition: {x: 0.8, y: 1.614}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.12, y: 0.86}
 --- !u!114 &453685698
@@ -779,7 +796,6 @@ GameObject:
   - component: {fileID: 518071118}
   - component: {fileID: 518071117}
   - component: {fileID: 518071122}
-  - component: {fileID: 518071123}
   m_Layer: 0
   m_Name: Basketball
   m_TagString: Basketball
@@ -894,7 +910,7 @@ Transform:
   m_GameObject: {fileID: 518071116}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.838, y: 5.9, z: 0.745}
+  m_LocalPosition: {x: -2.55, y: 29.73, z: 0.63}
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -979,7 +995,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 385343907}
         m_TargetAssemblyTypeName: 
         m_MethodName: 
         m_Mode: 1
@@ -1085,22 +1101,6 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!114 &518071123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518071116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6d07b29dd0742a46bec68f4feb2e99c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: {fileID: 554795550}
-  lastShot: {fileID: 1487350832}
-  bestShot: {fileID: 453685698}
-  collider: {fileID: 385343909}
 --- !u!1 &554795548
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,15 +1127,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 554795548}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.1700096}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.728}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1752562548}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.300004, y: 1.14}
+  m_AnchoredPosition: {x: -0.361, y: 1.653}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.11, y: 0.77}
 --- !u!114 &554795550
@@ -3098,15 +3098,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487350830}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.1990042}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.757}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1752562548}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.8080082, y: 1.3}
+  m_AnchoredPosition: {x: 0.801, y: 1.686}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.12, y: 0.83}
 --- !u!114 &1487350832
@@ -3259,7 +3259,7 @@ GameObject:
   - component: {fileID: 1752562551}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

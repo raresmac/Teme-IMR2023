@@ -12,3 +12,6 @@ Changes:
 - Finished Main->Road->Bench (modelling)
 - Finished Main->Mirrors
 - Finished Puzzles->Heart-Shaped Box (modelling)
+
+26.11.2023
+- Finished Puzzles->Greek Temple (modelling)

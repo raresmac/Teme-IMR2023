@@ -15,4 +15,4 @@ Changes:
 
 26.11.2023
 - Finished Puzzles->Greek Temple (modelling)
-- Started Puzzles->Logic Circuit (modelling)
+- Finished Puzzles->Logic Circuit (modelling)

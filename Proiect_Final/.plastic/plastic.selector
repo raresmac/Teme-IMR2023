@@ -1,0 +1,4 @@
+repository "Proiect_Final@Macovei_Rares@cloud"
+  path "/"
+    br "/main"
+    co "/main"

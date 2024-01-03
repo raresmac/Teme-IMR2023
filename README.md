@@ -16,3 +16,8 @@ Changes:
 26.11.2023
 - Finished Puzzles->Greek Temple (modelling)
 - Finished Puzzles->Logic Circuit (modelling)
+
+25.12.2023
+- Finished Puzzles->Water Sort (modelling + animating)
+- Finished Main->Portals (modelling + animating in Unity)
+- Added some textures

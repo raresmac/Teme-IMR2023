@@ -114,7 +114,7 @@ Material:
     - _VoronoiCellDensity: 1
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 19.437082, g: 6.2541776, b: 44.196228, a: 1}
+    - _Color: {r: 4.5473413, g: 3.70228, b: 52.325565, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &6934541520512698163

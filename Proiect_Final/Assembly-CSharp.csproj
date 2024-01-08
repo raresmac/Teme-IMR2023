@@ -67,6 +67,7 @@
     <Compile Include="Assets\Puzzles\Puzzles\Tetrominoes\Scripts\PickupController.cs" />
     <Compile Include="Assets\Puzzles\Character.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Tetrominoes\Scripts\PhysicsPickup.cs" />
+    <Compile Include="Assets\Main\Scripts\Generator.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Heart-Shaped Box\ActivateGravity.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Water Sort\Scripts\Wobble.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Tetrominoes\Scripts\ActivateAnimation.cs" />

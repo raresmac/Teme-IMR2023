@@ -21,3 +21,10 @@ Changes:
 - Finished Puzzles->Water Sort (modelling + animating)
 - Finished Main->Portals (modelling + animating in Unity)
 - Added some textures
+
+08.01.2024
+- added textures and sections
+- Finished Main->Obstacle generator
+
+12.01.2024
+- Finished Main->Portal gun (modelling)

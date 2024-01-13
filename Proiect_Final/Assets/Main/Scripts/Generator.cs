@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Generator : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class Generator : MonoBehaviour
     public GameObject[] obstacles = new GameObject[2];
     public GameObject[] mirrors = new GameObject[2];
     const float nextDistance = 33.3f;
-    readonly float[] obst_x_coord = {-6.739522f, 0.1399937f, 7.01951f}; 
+    readonly float[] obst_x_coord = {-6.739522f, 0.14f, 7.01951f}; 
     bool creatingSection = false;
     int secNum = 1;
     int lane = 1;
@@ -29,44 +30,47 @@ public class Generator : MonoBehaviour
             StartCoroutine(GenerateSection(5, secNum));
             secNum++;
         }
+        if(secNum > speed * 6){
+            SceneManager.LoadScene(sceneName:"Scenes/Puzzle");
+        }
     }
 
     IEnumerator GenerateSection(int delay, int number)
     {
         // Generating the empty section
-        var clone = (GameObject) Instantiate(startSection, new Vector3(0, (float) number / 10000f, number * nextDistance), Quaternion.Euler(new Vector3(0, -180, 0)));
+        var clone = (GameObject) Instantiate(startSection, new Vector3(0, -3.34f + (float) number / 10000f, number * nextDistance), Quaternion.Euler(new Vector3(0, -180, 0)));
         Destroy(clone, 2 * delay + 1);
 
         // Randomizing the obstacles
         GameObject[] gen_obstacles = new GameObject[3]; 
         int color_lane = UnityEngine.Random.Range(0, 2);
-        gen_obstacles[lane] = (GameObject) Instantiate(obstacles[color_lane], new Vector3(obst_x_coord[lane], 2.93f, 9.26f + number * nextDistance), Quaternion.identity);
+        gen_obstacles[lane] = (GameObject) Instantiate(obstacles[color_lane], new Vector3(obst_x_coord[lane], -0.4f, 9.26f + number * nextDistance), Quaternion.identity);
         Destroy(gen_obstacles[lane], 2 * delay + 1);
         color_lane = color_lane * (-1) + 1;
 
         if(lane == 0){
-            gen_obstacles[1] = (GameObject) Instantiate(obstacles[color_lane], new Vector3(obst_x_coord[1], 2.93f, 9.26f + number * nextDistance), Quaternion.identity);
+            gen_obstacles[1] = (GameObject) Instantiate(obstacles[color_lane], new Vector3(obst_x_coord[1], -0.4f, 9.26f + number * nextDistance), Quaternion.identity);
             Destroy(gen_obstacles[1], 2 * delay + 1);
-            gen_obstacles[2] = (GameObject) Instantiate(obstacles[color_lane], new Vector3(obst_x_coord[2], 2.93f, 9.26f + number * nextDistance), Quaternion.identity);
+            gen_obstacles[2] = (GameObject) Instantiate(obstacles[color_lane], new Vector3(obst_x_coord[2], -0.4f, 9.26f + number * nextDistance), Quaternion.identity);
             Destroy(gen_obstacles[2], 2 * delay + 1);
         }
         else if(lane == 1){
-            gen_obstacles[0] = (GameObject) Instantiate(obstacles[color_lane], new Vector3(obst_x_coord[0], 2.93f, 9.26f + number * nextDistance), Quaternion.identity);
+            gen_obstacles[0] = (GameObject) Instantiate(obstacles[color_lane], new Vector3(obst_x_coord[0], -0.4f, 9.26f + number * nextDistance), Quaternion.identity);
             Destroy(gen_obstacles[0], 2 * delay + 1);
-            gen_obstacles[2] = (GameObject) Instantiate(obstacles[color_lane], new Vector3(obst_x_coord[2], 2.93f, 9.26f + number * nextDistance), Quaternion.identity);
+            gen_obstacles[2] = (GameObject) Instantiate(obstacles[color_lane], new Vector3(obst_x_coord[2], -0.4f, 9.26f + number * nextDistance), Quaternion.identity);
             Destroy(gen_obstacles[2], 2 * delay + 1);
         }
         else{
-            gen_obstacles[0] = (GameObject) Instantiate(obstacles[color_lane], new Vector3(obst_x_coord[0], 2.93f, 9.26f + number * nextDistance), Quaternion.identity);
+            gen_obstacles[0] = (GameObject) Instantiate(obstacles[color_lane], new Vector3(obst_x_coord[0], -0.4f, 9.26f + number * nextDistance), Quaternion.identity);
             Destroy(gen_obstacles[0], 2 * delay + 1);
-            gen_obstacles[1] = (GameObject) Instantiate(obstacles[color_lane], new Vector3(obst_x_coord[1], 2.93f, 9.26f + number * nextDistance), Quaternion.identity);
+            gen_obstacles[1] = (GameObject) Instantiate(obstacles[color_lane], new Vector3(obst_x_coord[1], -0.4f, 9.26f + number * nextDistance), Quaternion.identity);
             Destroy(gen_obstacles[1], 2 * delay + 1);
         }
 
         // Randomizing the mirrors
         GameObject[] gen_mirrors = new GameObject[2]; 
         int color_mirror = UnityEngine.Random.Range(0, 2);
-        gen_mirrors[0] = (GameObject) Instantiate(mirrors[color_mirror], new Vector3(-8.223f, 1.84f, 21.406f + number * nextDistance), Quaternion.Euler(new Vector3(15, 171.166f, -2.278f)));
+        gen_mirrors[0] = (GameObject) Instantiate(mirrors[color_mirror], new Vector3(-8.223f, -1.5f, 21.406f + number * nextDistance), Quaternion.Euler(new Vector3(15, 171.166f, -2.278f)));
         gen_mirrors[0].transform.localScale = new Vector3(1, 0.88f, 1);
         Destroy(gen_mirrors[0], 2 * delay + 1);
         if(color_mirror == color_lane){
@@ -79,7 +83,7 @@ public class Generator : MonoBehaviour
         }
 
         color_mirror = color_mirror * (-1) + 1;
-        gen_mirrors[1] = (GameObject) Instantiate(mirrors[color_mirror], new Vector3(0.02f, 2.37f, 21.96f + number * nextDistance), Quaternion.Euler(new Vector3(15, -179.129f, 0.225f)));
+        gen_mirrors[1] = (GameObject) Instantiate(mirrors[color_mirror], new Vector3(0.02f, -1.5f, 21.96f + number * nextDistance), Quaternion.Euler(new Vector3(15, -179.129f, 0.225f)));
         gen_mirrors[1].transform.localScale = new Vector3(1, 0.88f, 1);
         Destroy(gen_mirrors[1], 2 * delay + 1);
 

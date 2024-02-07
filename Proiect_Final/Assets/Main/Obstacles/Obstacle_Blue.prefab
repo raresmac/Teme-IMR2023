@@ -119,5 +119,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thinCube: {fileID: 2542073971899595639, guid: 212de2dfa9fc6ab49a1734c89fb4308e, type: 3}
-  portal: {fileID: 2100000, guid: 5d060fe3aafc3f141a222844641b026e, type: 2}
+  portalMat: {fileID: 2100000, guid: 5d060fe3aafc3f141a222844641b026e, type: 2}
   ray: {fileID: 8343038666735071786, guid: 505b42b6c91ea9048ac41bf8b615eb3a, type: 3}

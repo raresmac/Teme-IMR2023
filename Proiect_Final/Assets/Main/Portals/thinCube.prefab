@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 8779693887170510236}
   - component: {fileID: 6151116843211493384}
   - component: {fileID: 1112419097058286761}
+  - component: {fileID: -4479157234908117335}
   m_Layer: 0
   m_Name: thinCube
-  m_TagString: Untagged
+  m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.43, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 0.01}
+  m_LocalScale: {x: 3, y: 3, z: 0.001}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -103,5 +104,20 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.02, y: 1.14, z: 30}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-4479157234908117335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2542073971899595639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e129ff8304420244bc836da7dd8a243, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 2100000, guid: 5d060fe3aafc3f141a222844641b026e, type: 2}
+  - {fileID: 2100000, guid: 10ea4dba8223e3047b31a7244a3edab6, type: 2}

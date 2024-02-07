@@ -9,6 +9,7 @@ public class Generator : MonoBehaviour
     public GameObject startSection;
     public GameObject[] obstacles = new GameObject[2];
     public GameObject[] mirrors = new GameObject[2];
+    private GameObject[] gen_obstacles = new GameObject[3];
     const float nextDistance = 33.3f;
     readonly float[] obst_x_coord = {-6.739522f, 0.14f, 7.01951f}; 
     bool creatingSection = false;
@@ -22,27 +23,31 @@ public class Generator : MonoBehaviour
         
     }
 
+    public GameObject[] getObstacles(){
+        Debug.Log(gen_obstacles);
+        return gen_obstacles;
+    }
+
     // Update is called once per frame
     void Update()
     {
         if(creatingSection == false){
             creatingSection = true;
-            StartCoroutine(GenerateSection(5, secNum));
+            StartCoroutine(GenerateSection(4.5f * speed, secNum));
             secNum++;
         }
-        //if(secNum > speed * 6){
-        //    SceneManager.LoadScene(sceneName:"Scenes/Puzzle");
-        //}
+        if(secNum > speed * 6){
+           SceneManager.LoadScene(sceneName:"Scenes/Puzzle");
+        }
     }
 
-    IEnumerator GenerateSection(int delay, int number)
+    IEnumerator GenerateSection(float delay, int number)
     {
         // Generating the empty section
         var clone = (GameObject) Instantiate(startSection, new Vector3(0, -3.34f + (float) number / 10000f, number * nextDistance), Quaternion.Euler(new Vector3(0, -180, 0)));
         Destroy(clone, 2 * delay + 1);
 
         // Randomizing the obstacles
-        GameObject[] gen_obstacles = new GameObject[3]; 
         int color_lane = UnityEngine.Random.Range(0, 2);
         gen_obstacles[lane] = (GameObject) Instantiate(obstacles[color_lane], new Vector3(obst_x_coord[lane], -0.4f, 9.26f + number * nextDistance), Quaternion.identity);
         Destroy(gen_obstacles[lane], 2 * delay + 1);

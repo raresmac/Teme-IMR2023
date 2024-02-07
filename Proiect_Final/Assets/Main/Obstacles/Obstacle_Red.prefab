@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8816654051464008215}
   - component: {fileID: 1458967163621078336}
   - component: {fileID: 7246278139819430143}
+  - component: {fileID: -293105765294812833}
   m_Layer: 0
   m_Name: Obstacle_Red
   m_TagString: Untagged
@@ -105,3 +106,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-293105765294812833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591509507732193329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e948b4dbfebba64cb674ac627671c48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thinCube: {fileID: 2542073971899595639, guid: 212de2dfa9fc6ab49a1734c89fb4308e, type: 3}
+  portal: {fileID: 2100000, guid: 10ea4dba8223e3047b31a7244a3edab6, type: 2}
+  ray: {fileID: 8343038666735071786, guid: d596e21c42ebbec439bee2d0d650adb6, type: 3}

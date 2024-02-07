@@ -30,9 +30,9 @@ public class Generator : MonoBehaviour
             StartCoroutine(GenerateSection(5, secNum));
             secNum++;
         }
-        if(secNum > speed * 6){
-            SceneManager.LoadScene(sceneName:"Scenes/Puzzle");
-        }
+        //if(secNum > speed * 6){
+        //    SceneManager.LoadScene(sceneName:"Scenes/Puzzle");
+        //}
     }
 
     IEnumerator GenerateSection(int delay, int number)

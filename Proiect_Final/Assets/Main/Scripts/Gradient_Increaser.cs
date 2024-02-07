@@ -24,6 +24,6 @@ public class Gradient_Increaser : MonoBehaviour
     {
         var new_time = Time.time;
         sat.Interp(sat, -100 + (new_time - original_time) * 1.1f, 0.01f);
-        Debug.Log(sat.value);
+        // Debug.Log(sat.value);
     }
 }

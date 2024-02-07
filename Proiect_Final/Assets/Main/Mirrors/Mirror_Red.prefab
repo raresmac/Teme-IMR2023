@@ -157,6 +157,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2330998132571307418}
+  - component: {fileID: -7880320631016448733}
   m_Layer: 0
   m_Name: Mirror_Red
   m_TagString: Untagged
@@ -182,6 +183,28 @@ Transform:
   - {fileID: 2445282536949581887}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 15, y: -8.834, z: -2.278}
+--- !u!64 &-7880320631016448733
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4700784002859030441}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &6317215749284688307
 GameObject:
   m_ObjectHideFlags: 0

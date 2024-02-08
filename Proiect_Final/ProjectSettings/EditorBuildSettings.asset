@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Puzzle.unity
     guid: 89a1b21112b5e134a8a6b0c0c116f311
+  - enabled: 1
+    path: Assets/Scenes/Tetrominoes.unity
+    guid: b30c1c9439f73f244b3e63351dda0e62
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2db2958dcfb02e640a75af30bd41bb13, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c45724c5aeb06954f9a5566e6b34b6d0, type: 2}

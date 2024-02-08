@@ -37,7 +37,10 @@ public class Generator : MonoBehaviour
             secNum++;
         }
         if(secNum > speed * 6){
-           SceneManager.LoadScene(sceneName:"Scenes/Puzzle");
+        //    SceneManager.LoadScene(sceneName:"Scenes/Puzzle");
+            if(speed == 1){
+                SceneManager.LoadScene(sceneName:"Scenes/Tetrominoes");
+            }
         }
     }
 

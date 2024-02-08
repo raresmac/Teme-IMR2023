@@ -5,15 +5,13 @@ using UnityEngine.UIElements;
 
 public class PortalMoving : MonoBehaviour
 {
-    private GameObject levelControl;
-    private GameObject[] generator;
     private GameObject[] portals;
     public Material[] materials;
 
     // Start is called before the first frame update
     void Start()
     {
-        levelControl = GameObject.FindGameObjectWithTag("GameController");
+
     }
 
     // Update is called once per frame

@@ -9,6 +9,8 @@ TagManager:
   - RayRight
   - Ray
   - Portal
+  - MirrorBlue
+  - MirrorRed
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - Water
   - UI
   - Pickup
-  - 
+  - Body
   - 
   - 
   - 

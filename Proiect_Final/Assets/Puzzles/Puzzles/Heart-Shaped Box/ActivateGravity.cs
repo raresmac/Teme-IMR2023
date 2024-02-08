@@ -16,8 +16,13 @@ public class ActivateGravity : MonoBehaviour
     void Update()
     {
             if (Input.GetMouseButtonDown(1)) {
-                GetComponent<Rigidbody>().useGravity = true;
+                
             }
             // anim.SetBool("button", false);
+    }
+
+    private void OnCollisionEnter(Collision collision){
+        collision.gameObject.transform.parent.GetComponentInChildren<Rigidbody>().useGravity = true;
+        // GetComponent<Rigidbody>().useGravity = true;
     }
 }

@@ -121,3 +121,4 @@ MonoBehaviour:
   materials:
   - {fileID: 2100000, guid: 5d060fe3aafc3f141a222844641b026e, type: 2}
   - {fileID: 2100000, guid: 10ea4dba8223e3047b31a7244a3edab6, type: 2}
+  canvas: {fileID: 3702067565203457102, guid: eb8b1903c0bf9be4597d5a2a76f7b278, type: 3}

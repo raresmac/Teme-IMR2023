@@ -36,7 +36,7 @@ public class Generator : MonoBehaviour
             StartCoroutine(GenerateSection(4.5f * speed, secNum));
             secNum++;
         }
-        if(secNum > speed * 6){
+        if(secNum > speed * 12){
         //    SceneManager.LoadScene(sceneName:"Scenes/Puzzle");
             if(speed == 1){
                 SceneManager.LoadScene(sceneName:"Scenes/Tetrominoes");

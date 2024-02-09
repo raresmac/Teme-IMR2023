@@ -166,7 +166,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103213571}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
@@ -4389,7 +4389,7 @@ MonoBehaviour:
   mirrors:
   - {fileID: 8022944467545904641, guid: 6e8e9b3ce3ff99b469d5ad2b6f0179b0, type: 3}
   - {fileID: 4700784002859030441, guid: aa843b203bfba0e438c31683528957f1, type: 3}
-  speed: 1
+  speed: 1.25
 --- !u!114 &4936378928678523119
 MonoBehaviour:
   m_ObjectHideFlags: 0

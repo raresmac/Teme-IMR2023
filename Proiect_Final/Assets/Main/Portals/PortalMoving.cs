@@ -52,17 +52,18 @@ public class PortalMoving : MonoBehaviour
 
             Debug.Log("Player hits portal!");
             Material material = this.GetComponent<Renderer>().material;
-            Debug.Log(material.name);
+            // Debug.Log(material.name);
             int obs_index;
             for(obs_index = 0; obs_index < nr_max; obs_index++){
-                Debug.Log(portals[obs_index].GetComponent<Renderer>().material);
-                Debug.Log(this.GetComponent<Renderer>().material);
+                // Debug.Log(portals[obs_index].GetComponent<Renderer>().material);
+                // Debug.Log(this.GetComponent<Renderer>().material);
                 if(portals[obs_index].GetComponent<Renderer>().material == material) break;
             }
-            Debug.Log(obs_index);
+            // Debug.Log(obs_index);
 
             int correct_path, order = 0;
-            if(material.name == "bluePortal (Instance)"){
+            // Debug.Log(material.name);
+            if(material.name == "bluePortal (Instance)" || material.name == "bluePortal" || material.name == "bluePortal (Instance) (Instance)"){
                 order = 1;
             }
             if(mirrors[order].transform.position.x + 8.223f < 0.1){
@@ -82,7 +83,7 @@ public class PortalMoving : MonoBehaviour
                 }
             }
 
-            Debug.Log(correct_path);
+            // Debug.Log(correct_path);
             int i = 0;
             for(; i < 3; i++){
                 if(i == obs_index) continue;
@@ -98,29 +99,32 @@ public class PortalMoving : MonoBehaviour
                     else if(portals[i].transform.position.x > 0.1f){
                         real_i = 2;
                     }
-                    if(real_i == correct_path){
+                    // if(real_i == correct_path){
                         Debug.Log("found");
                         Transform parent1 = collision.gameObject.transform.parent;
                         Transform parent2 = parent1.gameObject.transform.parent;
                         Debug.Log(parent2.position);
                         parent2.position = portals[i].transform.position + new Vector3(0, 0, 2f);
                         collision.gameObject.transform.localPosition = new Vector3(0, 0, 0);
+                        foreach(GameObject portal in GameObject.FindGameObjectsWithTag("Portal")){
+                            Destroy(portal);
+                        }
                         break;
-                    }
+                    // }
                 }
             }
 
-            if(i == 3){
-                Debug.Log("No portal found! You are dead!");
-                Time.timeScale = 0;
-                Transform parent1 = collision.gameObject.transform.parent;
-                Transform parent2 = parent1.gameObject.transform.parent;
-                parent2.transform.position += new Vector3(0f, 0f, -2f);
-                Instantiate(canvas, collision.gameObject.transform);
-                canvas.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
-                canvas.transform.position = new Vector3(0f, 0f, 2f);
-                canvas.SetActive(true);
-            }
+            // if(i == 3){
+            //     Debug.Log("No portal found! You are dead!");
+            //     Time.timeScale = 0;
+            //     Transform parent1 = collision.gameObject.transform.parent;
+            //     Transform parent2 = parent1.gameObject.transform.parent;
+            //     parent2.transform.position += new Vector3(0f, 0f, -2f);
+            //     Instantiate(canvas, collision.gameObject.transform);
+            //     canvas.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+            //     canvas.transform.position = new Vector3(0f, 0f, 2f);
+            //     canvas.SetActive(true);
+            // }
         }
     }
 }

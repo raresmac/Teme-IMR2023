@@ -11,6 +11,7 @@ TagManager:
   - Portal
   - MirrorBlue
   - MirrorRed
+  - Grid
   layers:
   - Default
   - TransparentFX

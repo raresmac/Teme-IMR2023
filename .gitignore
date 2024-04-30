@@ -1,10 +1,5 @@
 Library
-Bee
-Builds
-Logs
-Obj
-Temp
-ArtifactDB
 .vs
-Proiect_Final/Library/ArtifactDB
-Proiect_Final/Library/ArtifactDB
+.plastic
+Builds
+Temp

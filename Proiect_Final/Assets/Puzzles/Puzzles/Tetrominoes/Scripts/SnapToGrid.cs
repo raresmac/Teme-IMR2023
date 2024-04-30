@@ -10,9 +10,6 @@ public class SnapToGrid : MonoBehaviour
     public float maxSnapDistance = 0.5f;
     public Vector3 snapOffset = Vector3.zero;
 
-    // Tetromino-specific variables
-    private int[] squares;
-
     // Reference to the XR Grab Interactable component
     private XRGrabInteractable grabInteractable;
 
@@ -38,36 +35,6 @@ public class SnapToGrid : MonoBehaviour
                 Debug.LogError("Grid component not found. Make sure to assign it in the inspector or add it to the scene.");
             }
         }
-
-        squares = new int[3];
-        if (this.name == "tetromino1" || this.name == "tetromino1 (1)"){
-            squares[0] = 2;
-            squares[1] = 1;
-            squares[2] = 0;
-        } else if (this.name == "tetromino2" || this.name == "tetromino2 (1)"){
-            squares[0] = 3;
-            squares[1] = 0;
-            squares[2] = 0;
-        } else if (this.name == "tetromino3" || this.name == "tetromino3 (1)"){
-            squares[0] = 3;
-            squares[1] = 1;
-            squares[2] = 0;
-        } else if (this.name == "tetromino4" || this.name == "tetromino4 (1)"){
-            squares[0] = 3;
-            squares[1] = -1;
-            squares[2] = 0;
-        } else if (this.name == "tetromino_chair1" || this.name == "tetromino_chair1 (1)"){
-            squares[0] = 2;
-            squares[1] = 1;
-            squares[2] = 0;
-        } else if (this.name == "tetromino_chair2" || this.name == "tetromino_chair2 (1)"){
-            squares[0] = 1;
-            squares[1] = 2;
-            squares[2] = 0;
-        }
-        else{
-            Debug.LogWarning("Tetromino not recognized");
-        }
     }
 
     void OnSelectExited(SelectExitEventArgs args)
@@ -84,8 +51,8 @@ public class SnapToGrid : MonoBehaviour
         for(int i = 0; i < tetroGrid.gridSizeX; i++){
             for(int j = 0; j < tetroGrid.gridSizeY; j++){
                 for(int k = 0; k < tetroGrid.gridSizeZ; k++){
-                    if (tetroGrid.getGridCube(i + squares[0], j +squares[1], k + squares[2]) != null){
-                        Vector3 cellPosition = tetroGrid.getGridCube(i, j, k).transform.position;
+                    if (testAllChildren()){
+                        Vector3 cellPosition = tetroGrid.getGridCube(i, j, k).cubeCell.transform.position;
                         if(Vector3.Distance(transform.position + snapOffset, cellPosition) < minDistance){
                             minDistance = Vector3.Distance(transform.position + snapOffset, cellPosition);
                             minPosition = cellPosition;
@@ -95,7 +62,12 @@ public class SnapToGrid : MonoBehaviour
             }
         }
 
-        if (minDistance <= maxSnapDistance)
+        if (minDistance <= maxSnapDistance){
+            changePosRos(minPosition);
+        }
+    }
+
+    void changePosRos(Vector3 minPosition){
         {
             transform.position = minPosition;
             float newRotationX = Mathf.Round(transform.rotation.eulerAngles.x / 90) * 90;
@@ -103,5 +75,16 @@ public class SnapToGrid : MonoBehaviour
             float newRotationZ = Mathf.Round(transform.rotation.eulerAngles.z / 90) * 90;
             transform.rotation = Quaternion.Euler(newRotationX, newRotationY, newRotationZ);
         }
+    }
+
+    bool testAllChildren(){
+        Transform[] blocks = GetComponentsInChildren<Transform>();
+        foreach(Transform block in blocks){
+            // Debug.Log(block.position);
+            if (!tetroGrid.isInsideGrid(block.position)){
+                return false;
+            }
+        }
+        return true;
     }
 }

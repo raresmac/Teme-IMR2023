@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets\Puzzles\Puzzles\Tetrominoes\Scripts\SnapToGrid.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Tetrominoes\Scripts\TetroGrid.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Tetrominoes\Scripts\TetrominoCube.cs" />
     <Compile Include="Assets\Main\Scripts\Constant_Runner.cs" />
     <Compile Include="Assets\Puzzles\Character.cs" />
     <Compile Include="Assets\Main\Scripts\Generator.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Assets\Main\Portals\PortalMoving.cs" />
     <Compile Include="Assets\Main\Scripts\Gradient_Increaser.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Tetrominoes\Scripts\ActivateAnimation.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Tetrominoes\Scripts\Tetromino.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Tetrominoes\Scripts\PickupController.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Tetrominoes\Scripts\PhysicsPickup.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Heart-Shaped Box\ActivateGravity.cs" />

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -314,9 +314,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: b2790000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: fafaffff
+      m_ExpandedIDs: 6e6bffffc06bffff346fffff867fffffd87fffff6a83ffff429dffff36a1ffff3aadffff8cadfffffcb0ffff2eb9ffff80b9ffff58beffff86f9ffff407600006e7600008a760000b49a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -683,9 +683,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.14512675, y: 0.51272774, z: -0.99328923}
+    m_Target: {x: 0.016393209, y: 1.6127673, z: -1.1004356}
     speed: 2
-    m_Value: {x: -0.14512675, y: 0.51272774, z: -0.99328923}
+    m_Value: {x: 0.016393209, y: 1.6127673, z: -1.1004356}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -731,13 +731,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.00019226347, y: 0.9998017, z: -0.011396961, w: 0.016794387}
+    m_Target: {x: 0.03351864, y: 0.9624961, z: -0.1404496, w: 0.22972932}
     speed: 2
-    m_Value: {x: 0.00019226198, y: 0.99979395, z: -0.011396873, w: 0.016794257}
+    m_Value: {x: 0.033862777, y: 0.9622729, z: -0.1418915, w: 0.22967605}
   m_Size:
-    m_Target: 0.20570958
+    m_Target: 0.74620974
     speed: 2
-    m_Value: 0.20570958
+    m_Value: 0.7140763
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -807,7 +807,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Puzzles/Puzzles/Lights and Mirrors/Scripts
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -815,16 +815,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 62
   m_LastFolders:
-  - Assets/Puzzles/Puzzles/Lights and Mirrors/Scripts
+  - Assets/Scenes
   m_LastFoldersGridSize: 62
   m_LastProjectPath: D:\Unity Projects\Licenta\Proiect_Final
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 6a780000
-    m_LastClickedID: 30826
-    m_ExpandedIDs: 000000008c7600008e76000090760000927600009476000096760000987600009a7600009c7600009e760000a0760000a2760000a476000000ca9a3b
+    scrollPos: {x: 0, y: 199}
+    m_SelectedIDs: 80770000
+    m_LastClickedID: 30592
+    m_ExpandedIDs: 00000000727700007477000076770000787700007a7700007c7700007e77000080770000827700008477000086770000887700008a77000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -852,7 +852,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008c7600008e76000090760000927600009476000096760000987600009a7600009c7600009e760000a0760000a2760000a4760000
+    m_ExpandedIDs: 00000000727700007477000076770000787700007a7700007c7700007e77000080770000827700008477000086770000887700008a770000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1018,7 +1018,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 283
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

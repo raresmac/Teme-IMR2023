@@ -7,35 +7,43 @@ public class MirrorRotation : MonoBehaviour
     public float rotationSpeed = 1.0f;
 
     // Reference to the XR Grab Interactable component
-    private XRGrabInteractable grabInteractable;
+    private XRSimpleInteractable simpleInteractable;
+
+    // Current place of the controller
+    private Vector3 currentPlace;
 
     // Start is called before the first frame update
     void Start()
     {
-        // Get reference to the XR Grab Interactable component
-        grabInteractable = GetComponent<XRGrabInteractable>();
+        currentPlace = Vector3.zero;
 
-        // Subscribe to the rotation event
-        grabInteractable.onSelectEnter.AddListener(OnGrab);
+        // Get reference to the XR Grab Interactable component
+        simpleInteractable = GetComponent<XRSimpleInteractable>();
+
+        // Subscribe to the selection events
+        simpleInteractable.selectEntered.AddListener(OnGrab);
+        simpleInteractable.selectExited.AddListener(OnRelease);
     }
 
     // Called when the object is grabbed
-    private void OnGrab(XRBaseInteractor interactor)
+    private void OnGrab(SelectEnterEventArgs args)
     {
-        // Subscribe to the rotation input event
-        interactor.onSelectUpdate.AddListener(OnRotate);
+        currentPlace = simpleInteractable.transform.position;
     }
 
-    // Called when rotation input is detected
-    private void OnRotate(XRBaseInteractor interactor)
+    // Called when the object is released
+    private void OnRelease(SelectExitEventArgs args)
     {
-        // Get input from Oculus controllers
-        float rotationInput = interactor.GetControllerAngularVelocity().x;
+        currentPlace = Vector3.zero;
+    }
 
-        // Calculate rotation angle based on input
-        float rotationAngle = rotationInput * rotationSpeed * Time.deltaTime;
-
-        // Rotate the mirror around the X-axis
-        transform.Rotate(Vector3.right, rotationAngle);
+    // Update is called once per frame
+    void Update()
+    {
+        if(currentPlace != Vector3.zero)
+        {
+            float distance = Vector3.Distance(currentPlace, simpleInteractable.transform.position);
+            transform.rotation = Quaternion.Euler(distance * rotationSpeed, 0, 0);
+        }
     }
 }

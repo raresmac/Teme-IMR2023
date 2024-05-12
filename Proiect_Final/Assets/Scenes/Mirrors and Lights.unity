@@ -388,6 +388,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aa560a614ab2f9448ec3456f4b1a637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!54 &231316457
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -615,6 +618,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aa560a614ab2f9448ec3456f4b1a637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4
 --- !u!65 &249991287
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -928,6 +934,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aa560a614ab2f9448ec3456f4b1a637, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4
 --- !u!65 &393355393
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1394,7 +1403,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 627711048}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transformR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1444,7 +1453,7 @@ Transform:
   m_GameObject: {fileID: 732699484}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.409, y: 1.4575, z: -1.819}
+  m_LocalPosition: {x: 0.332, y: 1.4575, z: -1.819}
   m_LocalScale: {x: 0.34, y: 0.009999999, z: 0.19}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1536,9 +1545,9 @@ GameObject:
   - component: {fileID: 783220613}
   - component: {fileID: 783220612}
   - component: {fileID: 783220617}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Right Controller
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2310,6 +2319,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f12a638f388c9b54585f0a51c8779ff8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1009136853
 GameObject:
   m_ObjectHideFlags: 0
@@ -2472,7 +2484,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1188861872}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: transformL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2711,9 +2723,9 @@ GameObject:
   - component: {fileID: 1736639261}
   - component: {fileID: 1736639260}
   - component: {fileID: 1736639265}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Left Controller
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3244,7 +3256,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.09
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1736639266
 MonoBehaviour:
@@ -4046,7 +4058,7 @@ GameObject:
   - component: {fileID: 3700043613809650769}
   - component: {fileID: 4182944842683957652}
   - component: {fileID: 4182944842683957651}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: left_quest2_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4381,7 +4393,7 @@ GameObject:
   - component: {fileID: 7224414567029122033}
   - component: {fileID: 7887292609175958989}
   - component: {fileID: 7887292609175958988}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: right_quest2_mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -6,7 +6,7 @@ public class Mirror : MonoBehaviour
 {
     public void drawNewRay(LineRenderer lineRenderer, GameObject previousMirror, RaycastHit oldHit){
         int oldPositionCount = lineRenderer.positionCount;
-        Vector3 reflectionDirection = Vector3.Reflect(previousMirror.transform.forward, oldHit.normal);
+        Vector3 reflectionDirection = Vector3.Reflect(oldHit.normal, transform.up);
         RaycastHit hit;
         if (Physics.Raycast(transform.position, reflectionDirection, out hit)){
             lineRenderer.positionCount = oldPositionCount + 1;

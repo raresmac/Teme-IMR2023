@@ -12,6 +12,8 @@ TagManager:
   - MirrorBlue
   - MirrorRed
   - Grid
+  - Mirror
+  - MirrorTarget
   layers:
   - Default
   - TransparentFX

@@ -64,20 +64,24 @@
     <Analyzer Include="D:\Programs\Unity\Unity\2022.3.14f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Puzzles\Puzzles\Tetrominoes\Scripts\SnapToGrid.cs" />
-    <Compile Include="Assets\Puzzles\Puzzles\Tetrominoes\Scripts\TetroGrid.cs" />
-    <Compile Include="Assets\Puzzles\Puzzles\Tetrominoes\Scripts\TetrominoCube.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Lights and Mirrors\Scripts\LightsAndMirrors.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Tetracubes\Scripts\TetrominoCube.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Lights and Mirrors\Scripts\MirrorRotation.cs" />
     <Compile Include="Assets\Main\Scripts\Constant_Runner.cs" />
     <Compile Include="Assets\Puzzles\Character.cs" />
     <Compile Include="Assets\Main\Scripts\Generator.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Water Sort\Scripts\Wobble.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Heart-Shaped Box\SlowTime.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Tetracubes\Scripts\TetroGrid.cs" />
     <Compile Include="Assets\Main\Portals\PortalMoving.cs" />
     <Compile Include="Assets\Main\Scripts\Gradient_Increaser.cs" />
-    <Compile Include="Assets\Puzzles\Puzzles\Tetrominoes\Scripts\ActivateAnimation.cs" />
-    <Compile Include="Assets\Puzzles\Puzzles\Tetrominoes\Scripts\Tetromino.cs" />
-    <Compile Include="Assets\Puzzles\Puzzles\Tetrominoes\Scripts\PickupController.cs" />
-    <Compile Include="Assets\Puzzles\Puzzles\Tetrominoes\Scripts\PhysicsPickup.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Tetracubes\Scripts\PhysicsPickup.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Tetracubes\Scripts\PickupController.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Tetracubes\Scripts\ActivateAnimation.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Lights and Mirrors\Scripts\MirrorTarget.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Tetracubes\Scripts\Tetromino.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Lights and Mirrors\Scripts\Mirror.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Tetracubes\Scripts\SnapToGrid.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Heart-Shaped Box\ActivateGravity.cs" />
     <Compile Include="Assets\Main\Portals\PortalCreator.cs" />
     <Compile Include="Assets\Main\Portals\FirePortal.cs" />

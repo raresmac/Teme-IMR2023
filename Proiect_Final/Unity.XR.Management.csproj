@@ -64,16 +64,16 @@
     <Analyzer Include="D:\Programs\Unity\Unity\2022.3.14f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.xr.management@4.4.0\Runtime\XRManagerSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.management@4.4.0\Runtime\XRLoader.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.management@4.4.0\Runtime\IXRLoaderPreInit.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.management@4.4.0\Runtime\XRConfigurationData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.management@4.4.0\Runtime\XRGeneralSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.management@4.4.0\Runtime\XRLoaderHelper.cs" />
-    <Compile Include="Library\PackageCache\com.unity.xr.management@4.4.0\Runtime\XRManagementAnalytics.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.management@4.4.1\Runtime\XRManagerSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.management@4.4.1\Runtime\XRLoader.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.management@4.4.1\Runtime\IXRLoaderPreInit.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.management@4.4.1\Runtime\XRConfigurationData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.management@4.4.1\Runtime\XRGeneralSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.management@4.4.1\Runtime\XRLoaderHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.xr.management@4.4.1\Runtime\XRManagementAnalytics.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Library\PackageCache\com.unity.xr.management@4.4.0\Runtime\Unity.XR.Management.asmdef" />
+    <None Include="Library\PackageCache\com.unity.xr.management@4.4.1\Runtime\Unity.XR.Management.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

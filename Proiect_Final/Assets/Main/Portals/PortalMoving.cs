@@ -61,27 +61,28 @@ public class PortalMoving : MonoBehaviour
             }
             // Debug.Log(obs_index);
 
-            int correct_path, order = 0;
+            // int correct_path = 0;
+            // int order = 0;
             // Debug.Log(material.name);
-            if(material.name == "bluePortal (Instance)" || material.name == "bluePortal" || material.name == "bluePortal (Instance) (Instance)"){
-                order = 1;
-            }
-            if(mirrors[order].transform.position.x + 8.223f < 0.1){
-                if(obs_index == 0){
-                    correct_path = 1;
-                }
-                else{
-                    correct_path = 0;
-                }
-            }
-            else{
-                if(obs_index == 2){
-                    correct_path = 1;
-                }
-                else{
-                    correct_path = 2;
-                }
-            }
+            // if(material.name == "bluePortal (Instance)" || material.name == "bluePortal" || material.name == "bluePortal (Instance) (Instance)"){
+            //     order = 1;
+            // }
+            // if(mirrors[order].transform.position.x + 8.223f < 0.1){
+            //     if(obs_index == 0){
+            //         correct_path = 1;
+            //     }
+            //     else{
+            //         correct_path = 0;
+            //     }
+            // }
+            // else{
+            //     if(obs_index == 2){
+            //         correct_path = 1;
+            //     }
+            //     else{
+            //         correct_path = 2;
+            //     }
+            // }
 
             // Debug.Log(correct_path);
             int i = 0;
@@ -92,13 +93,13 @@ public class PortalMoving : MonoBehaviour
                 Debug.Log(portals[i].GetComponent<Renderer>().material);
                 Debug.Log(material);
                 if(portals[i].GetComponent<Renderer>().material != material){
-                    int real_i = 1;
-                    if(portals[i].transform.position.x < -0.1f){
-                        real_i = 0;
-                    }
-                    else if(portals[i].transform.position.x > 0.1f){
-                        real_i = 2;
-                    }
+                    // real_i = 1;
+                    // if(portals[i].transform.position.x < -0.1f){
+                    //     real_i = 0;
+                    // }
+                    // else if(portals[i].transform.position.x > 0.1f){
+                    //     real_i = 2;
+                    // }
                     // if(real_i == correct_path){
                         Debug.Log("found");
                         Transform parent1 = collision.gameObject.transform.parent;

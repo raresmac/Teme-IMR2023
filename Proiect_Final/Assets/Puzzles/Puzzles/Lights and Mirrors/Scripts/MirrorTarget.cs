@@ -6,7 +6,6 @@ using UnityEngine;
 public class MirrorTarget : MonoBehaviour
 {
     private Material material;
-    private bool isPuzzleFinished = false;
 
     void Start()
     {
@@ -15,7 +14,6 @@ public class MirrorTarget : MonoBehaviour
     
     public void finishPuzzle(){
         material.color = Color.green;
-        isPuzzleFinished = true;
     }
 
     public void resetPuzzle(){

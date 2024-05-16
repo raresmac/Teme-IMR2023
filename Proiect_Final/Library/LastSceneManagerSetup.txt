@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Mirrors and Lights.unity
+- path: Assets/Puzzles/Puzzles/Logic Circuit/Logic Circuit.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

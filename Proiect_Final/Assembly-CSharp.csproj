@@ -69,6 +69,7 @@
     <Compile Include="Assets\Puzzles\Puzzles\Lights and Mirrors\Scripts\MirrorRotation.cs" />
     <Compile Include="Assets\Main\Scripts\Constant_Runner.cs" />
     <Compile Include="Assets\Puzzles\Character.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Logic Circuit\Scripts\LogicGate.cs" />
     <Compile Include="Assets\Main\Scripts\Generator.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Water Sort\Scripts\Wobble.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Heart-Shaped Box\SlowTime.cs" />
@@ -80,10 +81,15 @@
     <Compile Include="Assets\Puzzles\Puzzles\Tetracubes\Scripts\ActivateAnimation.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Lights and Mirrors\Scripts\MirrorTarget.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Tetracubes\Scripts\Tetromino.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Logic Circuit\Scripts\LogicGate_XOR.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Lights and Mirrors\Scripts\Mirror.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Logic Circuit\Scripts\Lightbulb.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Logic Circuit\Scripts\LogicGate_OR.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Logic Circuit\Scripts\LogicGate_NOT.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Tetracubes\Scripts\SnapToGrid.cs" />
     <Compile Include="Assets\Puzzles\Puzzles\Heart-Shaped Box\ActivateGravity.cs" />
     <Compile Include="Assets\Main\Portals\PortalCreator.cs" />
+    <Compile Include="Assets\Puzzles\Puzzles\Logic Circuit\Scripts\LogicGate_AND.cs" />
     <Compile Include="Assets\Main\Portals\FirePortal.cs" />
   </ItemGroup>
   <ItemGroup>

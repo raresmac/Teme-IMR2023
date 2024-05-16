@@ -5,8 +5,6 @@ public class MirrorRotation : MonoBehaviour
 {
     // Speed of rotation
     public float rotationSpeed = 1.0f;
-
-    // Reference to the XR Grab Interactable component
     private XRSimpleInteractable simpleInteractable;
 
     // Current place of the controller

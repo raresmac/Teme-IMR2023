@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Puzzles/Puzzles/Logic Circuit/Logic Circuit.unity
+- path: Assets/Puzzles/Puzzles/Water Sort/Water Sort.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

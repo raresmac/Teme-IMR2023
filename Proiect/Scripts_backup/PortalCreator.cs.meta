@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 5d0a45215e90eca42b0bf8644977d43c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - thinCube: {fileID: 2542073971899595639, guid: 212de2dfa9fc6ab49a1734c89fb4308e, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

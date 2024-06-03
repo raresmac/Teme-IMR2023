@@ -16,6 +16,7 @@ TagManager:
   - MirrorTarget
   - Bulb
   - LogicGate
+  - LevelControl
   layers:
   - Default
   - TransparentFX

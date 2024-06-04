@@ -1,34 +1,24 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class SlowTime : MonoBehaviour
 {
-    public GameObject RightController;
-    private Vector3 lastPos;
-    private float elapsed;
-    // Start is called before the first frame update
-    void Start()
-    {
-        Time.timeScale = 0.1f;
-        lastPos = RightController.transform.position;
+    private Rigidbody rb;
+    
+    public float minTimeScale = 0.1f;
+    public float maxTimeScale = 1.0f;
+    public float movementThreshold = 0.1f;
+
+    void Start(){
+        rb = GameObject.FindGameObjectWithTag(Tags.GameController).GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        elapsed += Time.deltaTime;
-        if (elapsed > 1f / 15)
-        {
-            elapsed = 0f;
-            Vector3 newPos = RightController.transform.position;
-            float distance = Vector3.Distance(lastPos, newPos);
-            Time.timeScale = Math.Min(1, 0.1f + distance / 2);
-            // Debug.Log("Time is now " + Time.timeScale);
-            lastPos = RightController.transform.position;
-            // Debug.Log("LastPos is now " + lastPos);
-        }
-        
+    void Update(){
+        Debug.Log("Total movement: " + rb.velocity.magnitude);
+
+        // Calculate new time scale based on movement
+        float newTimeScale = Mathf.Lerp(minTimeScale, maxTimeScale, rb.velocity.magnitude);
+        Time.timeScale = Mathf.Clamp(newTimeScale, minTimeScale, maxTimeScale);
     }
 }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PortalCreator : MonoBehaviour
@@ -25,7 +23,7 @@ public class PortalCreator : MonoBehaviour
         if(collision.gameObject.CompareTag(Tags.RayLeft) || collision.gameObject.CompareTag(Tags.RayRight)){
             Destroy(collision.gameObject);
         }
-        else if(thinCubeClone == null && collision.gameObject.CompareTag(Tags.Player)){
+        else if(!LevelControl.debugDeath && thinCubeClone == null && collision.gameObject.CompareTag(Tags.Player)){
             Debug.Log("You hit a wall! You are dead!");
             Time.timeScale = 0;
             Transform parent1 = collision.gameObject.transform.parent;

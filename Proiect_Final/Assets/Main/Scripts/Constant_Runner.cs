@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class Constant_Runner : MonoBehaviour
 {
-    public float moveSpeed = 3;
-
     // Update is called once per frame
-    void Update()
-    {
-        transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed, Space.World);
+    void Update(){
+        transform.Translate(LevelControl.speed * Time.deltaTime * Vector3.forward, Space.World);
     }
 }

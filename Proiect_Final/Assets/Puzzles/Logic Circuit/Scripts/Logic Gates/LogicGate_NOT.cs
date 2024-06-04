@@ -14,5 +14,8 @@ public class LogicGate_NOT : LogicGate
         state1 = !state1;
         ChangeMaterial();
         ComputeLogicGates();
+        if(!output){
+            FinishLevel.Finish();
+        }
     }
 }

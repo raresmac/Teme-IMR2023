@@ -8,21 +8,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: Assets/Puzzles/Tetracubes/Tetracubes.unity
-    guid: b30c1c9439f73f244b3e63351dda0e62
-  - enabled: 0
-    path: Assets/Puzzles/Heart-Shaped Box/Heart-Shaped Box.unity
-    guid: 9a0381336966e7741a40f423e9f8a142
-  - enabled: 0
-    path: Assets/Puzzles/Light and Mirrors/Light and Mirrors.unity
-    guid: aa5a0006300008f4b877d2349be6b310
-  - enabled: 0
+  - enabled: 1
     path: Assets/Puzzles/Logic Circuit/Logic Circuit.unity
     guid: 825098dc95efbee4189861e06690d715
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Puzzles/Heart-Shaped Box/Heart-Shaped Box.unity
+    guid: 9a0381336966e7741a40f423e9f8a142
+  - enabled: 1
     path: Assets/Puzzles/Water Sort/Water Sort.unity
     guid: d824ecf105022cc4a9f5a7da3c21f746
+  - enabled: 1
+    path: Assets/Puzzles/Light and Mirrors/Light and Mirrors.unity
+    guid: aa5a0006300008f4b877d2349be6b310
+  - enabled: 1
+    path: Assets/Puzzles/Tetracubes/Tetracubes.unity
+    guid: b30c1c9439f73f244b3e63351dda0e62
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2db2958dcfb02e640a75af30bd41bb13, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c45724c5aeb06954f9a5566e6b34b6d0, type: 2}

@@ -1,31 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class LevelControl : MonoBehaviour
+public static class LevelControl
 {
-    public static LevelControl instance;
-    public int currentLevel = 0;
-    public float speed = 1.0f;
-    public float nextDistance = 33.3f;
+    public static int currentLevel = 0;
+    public static float speed = 7.5f;
+    public static bool debugDeath = true;
+    public static int maxSections = 15;
+    public static float speedMultiplier = 0.2f;
+    public static float generateMultiplier = 21.0f;
 
-    private void Awake(){
-        if (instance == null)
-            instance = this;
-        else
-            Destroy(gameObject);
+    public static void Initialize(){
+        speed = 7.0f;
+        maxSections = 10;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public static void UpdateSpeed(){
+        speed += Time.deltaTime * speedMultiplier;
     }
 }

@@ -6,17 +6,18 @@ using UnityEngine;
 public class MirrorTarget : MonoBehaviour
 {
     private Material material;
+    public FinishLevel finishLevel;
 
-    void Start()
-    {
+    void Start(){
         material = GetComponent<Renderer>().material;
     }
     
-    public void finishPuzzle(){
+    public void FinishPuzzle(){
         material.color = Color.green;
+        finishLevel.ShowWinMenu();
     }
 
-    public void resetPuzzle(){
+    public void ResetPuzzle(){
         material.color = Color.white;
     }
 }

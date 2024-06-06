@@ -6,4 +6,6 @@ public static class Tags
     public static string Finish = "Finish";
     public static string RayLeft = "RayLeft";
     public static string RayRight = "RayRight";
+    public static string Win = "Win";
+    public static string Loss = "Loss";
 }

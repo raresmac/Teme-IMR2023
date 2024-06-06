@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class TetroGrid : MonoBehaviour
 {
+    public FinishLevel finishLevel;
     // Size of the grid (number of cells)
     public int gridSizeX = 5;
     public int gridSizeY = 5;
@@ -16,16 +17,13 @@ public class TetroGrid : MonoBehaviour
     private CubeCell[][][] gridCubes;
     public float[,] boundaries = new float[3,2];
 
-    void Start()
-    {
+    void Start(){
         // Initialize the grid matrix
         gridCubes = new CubeCell[gridSizeX][][];
-        for (int x = 0; x < gridSizeX; x++)
-        {
+        for (int x = 0; x < gridSizeX; x++){
             gridCubes[x] = new CubeCell[gridSizeY][];
 
-            for (int y = 0; y < gridSizeY; y++)
-            {
+            for (int y = 0; y < gridSizeY; y++){
                 gridCubes[x][y] = new CubeCell[gridSizeZ];
                 for (int z = 0; z < gridSizeZ; z++){
                     gridCubes[x][y][z] = new CubeCell();
@@ -36,20 +34,18 @@ public class TetroGrid : MonoBehaviour
         CreateGrid();
     }
 
-    void Update()
-    {
+    void Update(){
         // Check if the puzzle is solved
         if(CheckSolution()){
             Debug.Log("Puzzle solved!");
-            for (int x = 0; x < gridSizeX; x++)
-            {
-                for (int y = 0; y < gridSizeY; y++)
-                {
+            for (int x = 0; x < gridSizeX; x++){
+                for (int y = 0; y < gridSizeY; y++){
                     for (int z = 0; z < gridSizeZ; z++){
                         gridCubes[x][y][z].occupier.GetComponent<MeshRenderer>().material.color = Color.green;
                     }
                 }
             }
+            finishLevel.ShowWinMenu();
         }
     }
 
@@ -170,13 +166,13 @@ public class CubeCell
     public float[,] boundaries = new float[3,2];
     public int x, y, z;
 
-    public void setOcuppiedTrue(TetrominoCube occupier){
+    public void SetOcuppiedTrue(TetrominoCube occupier){
         isOccupied = true;
         this.occupier = occupier;
     }
 
-    public void setOcuppiedFalse(){
+    public void SetOcuppiedFalse(){
         isOccupied = false;
-        this.occupier = null;
+        occupier = null;
     }
 }

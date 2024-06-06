@@ -17,6 +17,8 @@ TagManager:
   - Bulb
   - LogicGate
   - LevelControl
+  - Win
+  - Loss
   layers:
   - Default
   - TransparentFX

@@ -18,7 +18,7 @@ public class Mirror : MonoBehaviour
                 hit.collider.GetComponent<Mirror>().drawNewRay(lineRenderer, gameObject, hit);
             }
             else if (hit.collider.CompareTag("MirrorTarget")){
-                hit.collider.GetComponent<MirrorTarget>().finishPuzzle();
+                hit.collider.GetComponent<MirrorTarget>().FinishPuzzle();
             }
         }
         else{

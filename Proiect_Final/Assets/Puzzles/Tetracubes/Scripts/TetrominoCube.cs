@@ -10,13 +10,13 @@ public class TetrominoCube : MonoBehaviour
 
     public void setPlacedTrue(CubeCell cubeCell){
         isPlaced = true;
-        cubeCell.setOcuppiedTrue(this);
+        cubeCell.SetOcuppiedTrue(this);
         this.cubeCell = cubeCell;
     }
 
     public void setPlacedFalse(){
         isPlaced = false;
-        cubeCell.setOcuppiedFalse();
+        cubeCell.SetOcuppiedFalse();
         this.cubeCell = null;
     }
 }

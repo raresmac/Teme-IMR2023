@@ -25,9 +25,7 @@ public class GameManager : MonoBehaviour
 
         if (unfinished <= 1){
             Debug.Log("Finished");
-            foreach(Tube tube in tubes){
-                tube.gameObject.SetActive(false);
-            }
+            GetComponent<FinishLevel>().ShowWinMenu();
         }
     }
 }

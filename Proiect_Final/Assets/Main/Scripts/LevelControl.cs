@@ -10,7 +10,7 @@ public static class LevelControl
     public static float generateMultiplier = 21.0f;
 
     public static void Initialize(){
-        speed = 7.0f;
+        speed = 7.5f;
         maxSections = 10;
     }
 

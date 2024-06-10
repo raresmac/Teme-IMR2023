@@ -7,6 +7,7 @@ public class LogicGate_NOT : LogicGate
     void Start(){
         output = true;
         GetComponent<MeshRenderer>().material = onMaterial;
+        ComputeLogicGates();
     }
 
     public override void Compute(GameObject changedObject){

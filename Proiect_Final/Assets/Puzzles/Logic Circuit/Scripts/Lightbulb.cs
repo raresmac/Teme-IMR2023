@@ -15,14 +15,6 @@ public class Lightbulb : MonoBehaviour
         output = false;
         GetComponent<MeshRenderer>().material = offMaterial;
     }
-
-    void Update(){
-        // Check if the right mouse button is pressed
-        if (Input.GetMouseButtonDown(1)){
-            ChangeState();
-        }
-    }
-
     private void OnSelectEntered(SelectEnterEventArgs args){
         ChangeState();
     }

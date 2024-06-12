@@ -19,6 +19,7 @@ TagManager:
   - LevelControl
   - Win
   - Loss
+  - Level
   layers:
   - Default
   - TransparentFX

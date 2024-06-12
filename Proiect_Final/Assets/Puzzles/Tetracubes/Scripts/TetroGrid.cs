@@ -150,6 +150,7 @@ public class TetroGrid : MonoBehaviour
             for (int y = 0; y < gridSizeY; y++){
                 for (int z = 0; z < gridSizeZ; z++){
                     gridCubes[x][y][z].occupier.gameObject.GetComponent<MeshRenderer>().material = occupiedMaterial;
+                    finishLevel.ShowWinMenu();
                 }
             }
         }

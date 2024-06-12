@@ -59,7 +59,7 @@
     <UnityVersion>2022.3.14f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\rares\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.1\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\rares\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.2\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="D:\Programs\Unity\Unity\2022.3.14f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="D:\Programs\Unity\Unity\2022.3.14f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
@@ -80,6 +80,7 @@
     <Compile Include="Assets\Puzzles\Light and Mirrors\Scripts\MirrorRotation.cs" />
     <Compile Include="Assets\Main\Scripts\PortalCreator.cs" />
     <Compile Include="Assets\Main\Scripts\Gradient_Increaser.cs" />
+    <Compile Include="Assets\Puzzles\Logic Circuit\Scripts\Logic Gates\FinalGate.cs" />
     <Compile Include="Assets\Puzzles\Logic Circuit\Scripts\Logic Gates\LogicGate_XOR.cs" />
     <Compile Include="Assets\Main\Scripts\FirePortal.cs" />
     <Compile Include="Assets\Puzzles\Logic Circuit\Scripts\Logic Gates\LogicGate.cs" />
@@ -92,7 +93,9 @@
     <Compile Include="Assets\Puzzles\Light and Mirrors\Scripts\LightsAndMirrors.cs" />
     <Compile Include="Assets\Puzzles\Water Sort\Scripts\LiquidLayer.cs" />
     <Compile Include="Assets\Main\Scripts\LevelControl.cs" />
+    <Compile Include="Assets\Main\Scripts\Restart.cs" />
     <Compile Include="Assets\Puzzles\Tetracubes\Scripts\ActivateAnimation.cs" />
+    <Compile Include="Assets\Puzzles\Logic Circuit\Scripts\Logic Gates\FinalGates.cs" />
     <Compile Include="Assets\Puzzles\Water Sort\Old\Scripts\Wobble.cs" />
     <Compile Include="Assets\Puzzles\Heart-Shaped Box\Scripts\OutsideBox.cs" />
     <Compile Include="Assets\Puzzles\Tetracubes\Scripts\PhysicsPickup.cs" />

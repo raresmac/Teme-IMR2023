@@ -1,0 +1,43 @@
+testul 1:
+pre-testare:
+	Disconfort general                            - 
+	Oboseală                                      - 
+	Durere de cap                                 - 
+	Oboseală a ochilor                            - 
+	Dificultate de concentrare a privirii         - 
+	Salivație excesivă                            - 
+	Transpirație                                  - 
+	Greață                                        - 
+	Dificultate de concentrare                    - 
+	Senzație de presiune în cap                   - 
+	Vedere încețoșată                             - 
+	Amețeală (cu ochii deschiși)                  - 
+	Amețeală (cu ochii închiși)                   - 
+	Vertigo                                       - 
+	Senzație de disconfort la nivelul stomacului  - 
+	Eructații                                     - 
+	
+post-testare:
+	Disconfort general                            - 
+	Oboseală                                      - 
+	Durere de cap                                 - 
+	Oboseală a ochilor                            - 
+	Dificultate de concentrare a privirii         - 
+	Salivație excesivă                            - 
+	Transpirație                                  - 
+	Greață                                        - 
+	Dificultate de concentrare                    - 
+	Senzație de presiune în cap                   - 
+	Vedere încețoșată                             - 
+	Amețeală (cu ochii deschiși)                  - 
+	Amețeală (cu ochii închiși)                   - 
+	Vertigo                                       - 
+	Senzație de disconfort la nivelul stomacului  - 
+	Eructații                                     - 
+	
+	Frustrare									  - 
+	Agresivitate								  - 
+	Rabdare										  - 
+	Fericire									  - 
+	Sentiment de implinire						  - 
+	

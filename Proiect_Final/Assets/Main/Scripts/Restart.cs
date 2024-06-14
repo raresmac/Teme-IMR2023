@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
+    public void OnCollisionEnter(Collision collision){
+        RestartLevel();
+    }
+
     public void RestartLevel(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

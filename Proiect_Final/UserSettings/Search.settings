@@ -11,6 +11,9 @@ scopes = {
 	"last_search.310DEAF1" = "action"
 	"OpenInspectorPreview.310DEAF1" = "0"
 	"currentGroup.310DEAF1" = "all"
+	"last_search.3BE40471" = "tag:Untagged"
+	"OpenInspectorPreview.3BE40471" = "0"
+	"currentGroup.3BE40471" = "all"
 }
 providers = {
 	adb = {
@@ -62,6 +65,7 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"tag:Untagged"
 ]
 searchItemFavorites = [
 ]

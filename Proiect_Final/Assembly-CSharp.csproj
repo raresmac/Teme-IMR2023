@@ -93,8 +93,10 @@
     <Compile Include="Assets\Puzzles\Light and Mirrors\Scripts\LightsAndMirrors.cs" />
     <Compile Include="Assets\Puzzles\Water Sort\Scripts\LiquidLayer.cs" />
     <Compile Include="Assets\Main\Scripts\LevelControl.cs" />
+    <Compile Include="Assets\Main\Scripts\Wall.cs" />
     <Compile Include="Assets\Main\Scripts\Restart.cs" />
     <Compile Include="Assets\Puzzles\Tetracubes\Scripts\ActivateAnimation.cs" />
+    <Compile Include="Assets\Main\Scripts\WallRestart.cs" />
     <Compile Include="Assets\Puzzles\Logic Circuit\Scripts\Logic Gates\FinalGates.cs" />
     <Compile Include="Assets\Puzzles\Water Sort\Old\Scripts\Wobble.cs" />
     <Compile Include="Assets\Puzzles\Heart-Shaped Box\Scripts\OutsideBox.cs" />

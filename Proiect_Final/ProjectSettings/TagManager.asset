@@ -20,6 +20,7 @@ TagManager:
   - Win
   - Loss
   - Level
+  - Wall
   layers:
   - Default
   - TransparentFX

@@ -10,21 +10,10 @@ public class PortalMoving : MonoBehaviour
     public Material[] materials;
     public GameObject canvas;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
+        return;
+        if (collision.gameObject.CompareTag(Tags.Player))
         {
             portals = new GameObject[3];
             mirrors = new GameObject[2];
@@ -51,7 +40,7 @@ public class PortalMoving : MonoBehaviour
             }
 
             Debug.Log("Player hits portal!");
-            Material material = this.GetComponent<Renderer>().material;
+            Material material = GetComponent<Renderer>().material;
             // Debug.Log(material.name);
             int obs_index;
             for(obs_index = 0; obs_index < nr_max; obs_index++){

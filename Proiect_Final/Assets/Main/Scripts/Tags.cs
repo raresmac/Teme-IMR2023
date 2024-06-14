@@ -8,5 +8,6 @@ public static class Tags
     public static string RayRight = "RayRight";
     public static string Win = "Win";
     public static string Loss = "Loss";
+    public static string Wall = "Wall";
     public static string Level = "Level";
 }

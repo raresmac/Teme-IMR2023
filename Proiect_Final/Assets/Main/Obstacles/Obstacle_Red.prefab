@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 1458967163621078336}
   - component: {fileID: 7246278139819430143}
   - component: {fileID: -293105765294812833}
+  - component: {fileID: 1009993101998805030}
+  - component: {fileID: 3495692446734121730}
   m_Layer: 0
   m_Name: Obstacle_Red
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,3 +124,32 @@ MonoBehaviour:
   canvas: {fileID: 3702067565203457102, guid: eb8b1903c0bf9be4597d5a2a76f7b278, type: 3}
   portalMat: {fileID: 2100000, guid: 10ea4dba8223e3047b31a7244a3edab6, type: 2}
   ray: {fileID: 8343038666735071786, guid: d596e21c42ebbec439bee2d0d650adb6, type: 3}
+--- !u!114 &1009993101998805030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591509507732193329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2738eba183dc40946ae2f97df829aefc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lane: 0
+  portal: {fileID: 0}
+  generator: {fileID: 0}
+--- !u!114 &3495692446734121730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591509507732193329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b82c4f876a4d4d42af5f249784a0d5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winMenu: {fileID: 0}
+  lossMenu: {fileID: 0}

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Puzzles/Heart-Shaped Box/Heart-Shaped Box.unity
+- path: Assets/Puzzles/Light and Mirrors/Light and Mirrors.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
